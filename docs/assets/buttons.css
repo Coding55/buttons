@@ -1,0 +1,50 @@
+:root {
+	/* PRE-DEFINED BUTTONS SIZES */
+	--buttons_size_small: 20px;
+
+	/* PRE-DEFINED BUTTONS COLORS */
+	--buttons_color_primary: #24a0ed;
+	--buttons_color_primary_alt: #1186D0;
+	--buttons_color_secondary: #898989;
+	--buttons_color_secondary_alt: #707070;
+	--buttons_color_success: #4BB543;
+	--buttons_color_success_alt: #3D9537;
+	--buttons_color_danger: #E61919;
+	--buttons_color_danger_alt: #B81414;
+	--buttons_color_warning: #FFC107;
+	--buttons_color_warning_alt: #EB961E;
+}
+
+button {all: unset;} /* Removes all browser styling for <button> element */
+
+/* Main buttons class */
+.buttons {
+	text-align: center;
+	outline: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	/* The default is small*/
+	font-size: var(--buttons_size_small);
+	padding: 5px 20px;
+	transition: background-color 0.5s;
+	border-radius: 5px;
+}
+.buttons:active, .buttons:focus {outline: none;}
+
+/* ############# PRE-DEFINED BUTTONS STYLING ############ */
+/* # PRIMARY
+ */ .buttons--primary {background-color: var(--buttons_color_primary); color: white;}
+	.buttons--primary:hover {background-color: var(--buttons_color_primary_alt);}
+/* # SECONDARY
+ */ .buttons--secondary {background-color: var(--buttons_color_secondary); color: white;}
+	.buttons--secondary:hover {background-color: var(--buttons_color_secondary_alt);}
+/* # SUCCESS 
+ */ .buttons--success {background-color: var(--buttons_color_success); color: white;}
+	.buttons--success:hover {background-color: var(--buttons_color_success_alt);}
+/* # DANGER
+ */ .buttons--danger {background-color: var(--buttons_color_danger); color: white;}
+	.buttons--danger:hover {background-color: var(--buttons_color_danger_alt);}
+/* # WARNING
+ */ .buttons--warning {background-color: var(--buttons_color_warning); color: black;}
+	.buttons--warning:hover {background-color: var(--buttons_color_warning_alt);}
+/* ###################################################### */
